@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FacturasComponent } from './facturas/facturas.component';
+import { FacturasComponent } from './facturas-main/facturas.component';
 
 
 

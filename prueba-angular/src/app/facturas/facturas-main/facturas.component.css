@@ -1,0 +1,68 @@
+.contianer_nav{
+    height: auto;
+    padding: 1rem;
+    background-color:  #016c7f ;
+    gap: 10px 0;
+}
+
+
+
+.cabe{
+    display: grid;
+    padding: 10px 40px;
+    padding-top: 20px;
+    grid-template-columns: repeat(4, minmax(300px, 1000px));
+    border-top: 5px solid var(--primary-color);
+}
+
+.cabe p{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+    color: azure;
+    padding-top: 10px;
+}
+
+.cabe-logo img{
+    width: 130px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+
+.contianer_fa{
+    display:grid;
+    padding: 10px 40px;
+    padding-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contianer_fa h2{
+    margin-top: 40px;
+    color: aqua;
+    font-size: 42px;
+     
+}
+
+.contianer_fa h3{
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.contianer_fa .info_fa p{
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+     
+}
+
+.contianer_fa .facturar{
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.contianer_fa .enviar{
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+}
