@@ -1,0 +1,105 @@
+<div class="contianer_nav">
+    <div class="cabe">
+        
+    <div class="cabe-logo">
+        <img src="assets/image/factu.png" alt="Logo">
+    </div>
+
+    <div class="about-us">
+        <p>Prueba de Angular</p>
+        <p>21/09/2023</p>
+        <p>Guayaquil, Ecuador</p>
+    </div>
+    
+    <div class="contact-us">
+        <p>Web: prueba.com</p>
+        <p>Email: jordarto@gmail.com</p>
+        <p>Telf: 0982431397</p>
+        <p>Twitter: @jordarto</p>
+    </div>
+    
+    <div class="info">
+        <p>Datos Bancarios:</p>
+        <p>Titular de la cuenta:</p>
+        <p>IBAN:</p>
+        <p>BIC:</p>
+    </div>
+    
+    </div>
+</div>
+<div class="contianer_fa">
+
+    <h2>Factura</h2>
+    <div class="info_fa">
+        <p>Fecha: 21/09/2023 </p>
+        <p>Factura #: 100 </p>
+        <p>Vence: 28/09/2023</p>
+    </div>    
+    <div class="facturar">
+        <h3>Facturar a</h3>
+        <p>[Nombre cliente]</p>
+        <p>[Nombre empresa]</p>
+        <p>[Direccion empresa]</p>
+        <p>[Tel empresa]</p>
+    </div>    
+    <div class="enviar">
+        <h3>Enviar </h3>
+        <p>[Nombre cliente]</p>
+        <p>[Nombre empresa]</p>
+        <p>[Direccion empresa]</p>
+        <p>[Tel empresa]</p>
+    </div>    
+    
+
+</div>
+<div class="contianer_ve">
+    <mat-grid-list cols="4"  rowHeight="50px" >
+        <mat-grid-tile><h3>Vendedor</h3></mat-grid-tile>
+        <mat-grid-tile><h3>Orden de compra</h3></mat-grid-tile>
+        <mat-grid-tile><h3>Enviar por</h3></mat-grid-tile>
+        <mat-grid-tile><h3>Terminos y condiciones</h3></mat-grid-tile>
+        <mat-grid-tile>John Doe</mat-grid-tile>
+        <mat-grid-tile>#PO-2020</mat-grid-tile>
+        <mat-grid-tile>DHL</mat-grid-tile>
+        <mat-grid-tile>Pago al contado</mat-grid-tile>
+      </mat-grid-list>
+</div>
+<div class="tabla">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="codigo">
+        <th mat-header-cell *matHeaderCellDef> Codigo </th>
+        <td mat-cell *matCellDef="let element"> {{element.codigo}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="descripcion">
+        <th mat-header-cell *matHeaderCellDef> Descripcion </th>
+        <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="cant">
+        <th mat-header-cell *matHeaderCellDef> Cantidad </th>
+        <td mat-cell *matCellDef="let element"> {{element.cant}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="precio">
+        <th mat-header-cell *matHeaderCellDef> Precio</th>
+        <td mat-cell *matCellDef="let element">$ {{element.precio}} </td>
+    </ng-container>
+
+   <ng-container matColumnDef="total">
+        <th mat-header-cell *matHeaderCellDef> Total </th>
+        <td mat-cell *matCellDef="let element">$ {{calcular(element)}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr>
+
+</table>
+
+</div>
+
+<div class="inferior">
+<button mat-raised-button (click)="openDialogAgregar()" class="button-add"> Agregar +</button>
+</div>

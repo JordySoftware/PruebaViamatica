@@ -66,3 +66,32 @@
     margin-top: 30px;
     color: rgb(0, 0, 0);
 }
+
+.contianer_ve{
+    padding: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.contianer_ve mat-grid-tile{
+    border: 1px solid #3be94c; 
+  }
+
+  .contianer_ve mat-grid-tile h3{
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+
+
+.tabla {
+    padding: 30px;
+  }
+
+.tabla table {
+    width: 90%;
+    margin: 30px auto 0px auto;
+  }
+
+.inferior{
+    padding-left: 30px;
+}
+ 

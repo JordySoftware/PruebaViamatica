@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FacturasComponent } from './facturas/facturas-main/facturas.component';
+import { FacturasComponent } from './facturas/pages/main/facturas.component';
 
 const routes: Routes = [
 
